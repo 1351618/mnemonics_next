@@ -1,0 +1,57 @@
+.baner {
+  margin-top: var(--indent);
+  padding-top: var(--indent);
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  color: aqua;
+  padding-bottom: var(--indent);
+
+  h2 {
+    font-size: 30px;
+    margin: 10px;
+  }
+  p {
+    padding-left: 20px;
+    max-width: 50%;
+  }
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #fff8dc;
+  }
+}
+
+.banerBc {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: moveBackground 40s infinite alternate ease-in-out;
+}
+
+/* Анимация движения заднего фона влево-вправо и по диагонали */
+@keyframes moveBackground {
+  0% {
+    transform: translate(0, 0) scale(1); /* Начальное положение и масштаб */
+  }
+  25% {
+    transform: translate(-20px, -10px) scale(1.05); /* Двигаем влево и чуть вверх с увеличением */
+  }
+  50% {
+    transform: translate(20px, 10px) scale(1.1); /* Двигаем вправо и чуть вниз с максимальным увеличением */
+  }
+  75% {
+    transform: translate(-10px, -5px) scale(1.05); /* Двигаем влево и чуть вверх, уменьшая масштаб */
+  }
+  100% {
+    transform: translate(0, 0) scale(1); /* Возвращаем в исходное положение и масштаб */
+  }
+}

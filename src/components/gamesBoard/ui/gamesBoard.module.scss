@@ -1,0 +1,45 @@
+.gamesBoard {
+  background: linear-gradient(45deg, #000069, #55002e, #000069);
+  margin-top: var(--indent);
+  padding-bottom: var(--indent);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  h2 {
+    font-size: 30px;
+    color: aliceblue;
+    padding: 20px;
+  }
+}
+.gamesBoardCards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.gameMiniCard {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.4s, box-shadow 0.4s;
+  &:hover {
+    transform: translate(-1px, -2px);
+    box-shadow: 5px 5px 16px #000000d1;
+  }
+  img {
+    height: 200px;
+    width: 280px;
+  }
+  h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    padding: 6px 20px;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+}

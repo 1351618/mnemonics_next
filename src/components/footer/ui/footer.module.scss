@@ -1,0 +1,9 @@
+.footer {
+  max-width: var(--max-width);
+  width: 100%;
+  color: var(--color);
+  background-color: var(--backgroundColor);
+  transition: background-color 0.5s ease;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  padding: 10px;
+}

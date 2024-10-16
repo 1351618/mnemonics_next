@@ -1,0 +1,36 @@
+{
+  "name": "next-app-dir-i18next-example",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "dev-turbo": "next dev --turbo",
+    "lint": "next lint",
+    "start": "next start",
+    "migrateToLocize": "locize migrate --project-id=01b2e5e8-6243-47d1-b36f-963dbb8bcae3 --api-key=c9805cd1-fd50-4d98-967a-383b39066de8 --path=./app/i18n/locales",
+    "downloadLocales": "locize download --project-id=01b2e5e8-6243-47d1-b36f-963dbb8bcae3 --ver=latest --clean=true --path=./app/i18n/locales",
+    "syncLocales": "locize sync --project-id=01b2e5e8-6243-47d1-b36f-963dbb8bcae3 --api-key=bd8cb856-d6b3-4c82-a456-862c729a1674 --ver=latest --path=./app/i18n/locales --dry=true"
+  },
+  "dependencies": {
+    "accept-language": "3.0.18",
+    "cookies-next": "^4.2.1",
+    "i18next": "23.11.5",
+    "i18next-browser-languagedetector": "8.0.0",
+    "i18next-http-backend": "^2.6.1",
+    "i18next-resources-to-backend": "1.2.1",
+    "next": "^14.2.8",
+    "next-client-cookies": "^1.1.1",
+    "react": "18.3.1",
+    "react-cookie": "7.1.4",
+    "react-dom": "18.3.1",
+    "react-i18next": "14.1.2",
+    "sass": "^1.78.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.5.3",
+    "eslint": "^9.10.0",
+    "locize-cli": "8.0.1",
+    "typescript": "5.5.4"
+  }
+}

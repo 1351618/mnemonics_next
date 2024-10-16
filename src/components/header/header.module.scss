@@ -1,0 +1,70 @@
+// src\app\components\header\header.module.scss
+
+.header {
+  background-color: var(--backgroundColor);
+  transition: background-color 0.5s ease;
+  max-width: var(--max-width);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 10px;
+  border-radius: 0px 0px var(--border-radius) var(--border-radius);
+  position: relative;
+}
+
+.headerBtn {
+  position: absolute;
+  right: 8px;
+  bottom: 3px;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.headerLogo {
+  height: 70px;
+  width: 70px;
+}
+
+.headerMobile {
+  display: none;
+}
+.headerMobileSubstrate {
+  position: fixed;
+  z-index: 10;
+  background-color: rgba(82, 82, 82, 0.5);
+  backdrop-filter: blur(10px);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.headerDesktop {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .headerMobile {
+    display: block;
+  }
+  .headerDesktop {
+    display: none;
+  }
+}
+
+.headerRight {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+
+  gap: 2px;
+}
+
+.headerRightDopBtn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

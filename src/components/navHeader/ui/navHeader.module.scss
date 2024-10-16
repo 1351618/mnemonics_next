@@ -1,0 +1,35 @@
+// src\app\components\navHeader\ui\navHeader.module.scss
+
+.navHeader {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  height: 100%;
+  align-items: flex-end;
+  padding-bottom: 15px;
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--color);
+
+  a {
+    &:hover {
+      text-shadow: 0px 0px 2px var(--color);
+    }
+  }
+
+  .active {
+    color: #0011ff;
+    &:hover {
+      text-shadow: 0px 0px 2px var(--color);
+      color: var(--color);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .navHeader {
+    align-items: center;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,16 @@
+.layoutHeader {
+  max-width: var(--max-width);
+  width: 100%;
+}
+
+.layoutMain {
+  flex-grow: 1;
+  // border: 2px solid #3f3f3c;
+  max-width: var(--max-width);
+  width: 100%;
+}
+
+.layoutFooter {
+  max-width: var(--max-width);
+  width: 100%;
+}
