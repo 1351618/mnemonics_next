@@ -1,0 +1,19 @@
+.words {
+  border: 2px solid #eeff00;
+}
+
+.wordsNav {
+  border: 2px solid #ff0000;
+  display: flex;
+  justify-content: space-between;
+}
+.wordsMain {
+  border: 2px solid #00ff00;
+  flex-grow: 1;
+  position: relative;
+}
+.statistics {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
