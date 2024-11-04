@@ -1,7 +1,5 @@
 // import "./global.css";
 
-
-
 import cls from "./layout.module.scss";
 import "../styles/global.scss";
 import { ThemeProvider } from "src/providers/themeProvider/ui/ThemeProvider";
@@ -27,9 +25,8 @@ export async function generateMetadata({ params: { lng } }) {
 }
 
 export default async function RootLayout({ children, params: { lng } }) {
-
   return (
-    <html >
+    <html>
       <head />
       <body className={cls.body}>
         <ThemeProvider>
@@ -45,7 +42,6 @@ export default async function RootLayout({ children, params: { lng } }) {
             </section>
           </LangProvider>
         </ThemeProvider>
-
       </body>
     </html>
   );

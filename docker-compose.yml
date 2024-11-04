@@ -1,0 +1,17 @@
+version: "3" # Версия формата файла
+
+services:
+  db:
+    image: postgres # Имя Docker-образа для PostgreSQL без тега
+    restart: always # Убедитесь, что не ставите двоеточие после always
+    ports:
+      - "5432:5432" # Окружите порты кавычками
+    environment:
+      POSTGRES_USER: example # Замените "=" на ":"
+      POSTGRES_PASSWORD: example # Замените "=" на ":"
+      POSTGRES_DB: example # Замените "=" на ":"
+    volumes:
+      - db-data:/var/lib/postgresql/data # Персистентное хранилище для данных
+
+volumes:
+  db-data: # Определение персистентного тома для базы данных
